@@ -8,19 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>"LineTR:Unified Text Line Segmentation for Challenging Palm Leaf Manuscripts"</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -32,7 +19,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/1630643899289.jpeg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -72,7 +59,7 @@
   </div>
 </nav>
 
-
+<!-- START ---   SECTION - TITLE -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -153,8 +140,13 @@
     </div>
   </div>
 </section>
+<!-- END ---   SECTION - TITLE -->
 
-<section class="hero teaser">
+
+
+
+<!-- <section class="hero teaser">
+  ######################## VIDEO BLOCK
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
@@ -167,8 +159,22 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 
+<!-- START ---   SECTION - VIDEO TEASER -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <figure>
+        <img src="./static/images/V2 - ICPR-LineTR.png" alt="Title Card." style="width: 100%;" height="100%"/>
+    </figure>
+    </div>
+  </div>
+</section>
+<!-- END ---   SECTION - VIDEO TEASER -->
+
+
+<!-- START ---   SECTION - ABSTRACT -->
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -206,8 +212,10 @@
     <!--/ Paper video. -->
   </div>
 </section>
+<!-- END ---   SECTION - ABSTRACT -->
 
 
+<!-- START ---   SECTION - INTRODUCTION -->
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Network Architecture . -->
@@ -227,7 +235,10 @@
       </div>
     </div>
 </section>
+<!-- END ---   SECTION - INTRODUCTION -->
 
+
+<!-- START ---   SECTION - ARCHITECTURE -->
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Network Architecture . -->
@@ -247,13 +258,167 @@
       </div>
     </div>
 </section>
+<!-- END ---   SECTION - ARCHITECTURE -->
 
 
+<!-- START ---   SECTION - QUALITATIVE RESULTS -->
+<section class="section" id="abstract">
+  <div class="container is-max-desktop">
+
+      <div class="columns is-centered">
+        <div class="column is-full has-text-centered">
+          <h2 class="title is-3">Qualitative Results</h2>
+        </div>
+      </div>
+      <!-- ROW 1 - curved text lines -->
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <h2 class="title is-5">Curved Text-lines</h2>
+          <p>SeamFormer and Palmira - fail when the text-lines have a curvature spread across the document width. But <b>LineTR</b> is able to detect all the text-lines accurately.
+          </p>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <figure>
+            <img src="./static/images/results/sf_curved.jpg" alt="Predictions from SeamFormer for a manuscript with curved text." style="width: 90%;"/>
+            <figcaption  style="font-style: italic;">
+                SeamFormer.
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column">
+          <figure>
+              <img src="./static/images/results/palmira_curved.jpg" alt="Predictions from Palmira for a manuscript with curved text." style="width: 90%;"/>
+              <figcaption  style="font-style: italic;">
+                  Palmira.
+              </figcaption>
+          </figure>
+        </div>
+        <div class="column">
+          <figure>
+              <img src="./static/images/results/linetr_curved.jpg" alt="Predictions from LineTR (ours) for a manuscript with curved text." style="width: 90%;"/>
+              <figcaption  style="font-style: italic;  font-weight: bold;">
+                  LineTR (Ours).
+              </figcaption>
+          </figure>
+      </div>
+      </div>
+      
+      
+      <!-- ROW 2 - Dense text lines -->
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <h2 class="title is-5">Dense Text-lines</h2>
+          <p>SeamFormer and Palmira - fails on images where the density of text is very high. But <b>LineTR</b> succeeds in detecting all the text-lines accurately.
+          </p>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <figure>
+            <img src="./static/images/results/sf_dense.jpg" alt="Predictions from SeamFormer for a manuscript with dense text." style="width: 80%;"/>
+            <figcaption  style="font-style: italic;">
+                SeamFormer.
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column">
+          <figure>
+              <img src="./static/images/results/palmira_dense.jpg" alt="Predictions from Palmira for a manuscript with dense text." style="width: 80%;"/>
+              <figcaption  style="font-style: italic;">
+                  Palmira.
+              </figcaption>
+          </figure>
+        </div>
+        <div class="column">
+          <figure>
+              <img src="./static/images/results/linetr_dense.jpg" alt="Predictions from LineTR (ours) for a manuscript with dense text." style="width: 80%;"/>
+              <figcaption  style="font-style: italic;  font-weight: bold;">
+                  LineTR (Ours).
+              </figcaption>
+          </figure>
+      </div>
+      </div>
+
+      <!-- ROW 3 - Zeroshot Results -->
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <h2 class="title is-5">Zero-shot Predictions</h2>
+          <p>Zero-shot outputs of LineTR on the newly introduced datasets.
+          </p>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <figure>
+            <img src="./static/images/zeroshot/SM2.jpg" alt="Zero-shot result from SM." style="width: 100%;"/>
+          </figure>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <figure>
+              <img src="./static/images/zeroshot/UB.JPG" alt="Zero-shot result from UB." style="width: 90%;"/>
+          </figure>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <figure>
+              <img src="./static/images/zeroshot/WM.jpg" alt="Zero-shot result from WM." style="width: 90%;"/>
+          </figure>
+      </div>
+      </div>
+
+
+      <!-- ROW 4 - OOD Results -->
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <h2 class="title is-5">LineTR performs well with other Handwritten Datasets</h2>
+          <p>Even though LineTR was trained only on palm leaf manuscripts, it is able to generalize to documents well outside it’s primary domain.</p>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <figure>
+            <img src="./static/images/ood/2_icdar2017_1.jpg" alt="Predictions from SeamFormer for a manuscript with dense text." style="width: 90%;"/>
+            <figcaption  style="font-style: italic;">
+                SeamFormer.
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column">
+          <figure>
+              <img src="./static/images/ood/icdar2017_2.jpeg" alt="Predictions from Palmira for a manuscript with dense text." style="width: 90%;"/>
+              <figcaption  style="font-style: italic;">
+                  Palmira.
+              </figcaption>
+          </figure>
+        </div>
+
+      </div>
+
+
+  </div>
+</section>
+
+<!-- END ---   SECTION - QUALITATIVE RESULTS -->
+
+
+
+<!-- START ---   SECTION - BIBTEXT -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{vaibav2024linetr,
-  author    = {TBD},
+  author    = {Agrawal, Vaibhav and Vadlamudi, Niharika and Waseem, Muhammad and Joseph, Amal and Chitluri, Sreenya and Sarvadevabhatla, Ravi Kiran},
   title     = {LineTR:Unified Text Line Segmentation for Challenging Palm Leaf Manuscripts},
   journal   = {ICPR},
   year      = {2024},
@@ -270,38 +435,21 @@
       </p>
   </div>
 </section>
+<!-- END ---   SECTION - BIBTEXT -->
 
+
+
+<!-- START ---   SECTION - FOOTER -->
 <footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
-        </div>
+  <div align="center" class="container">
+      <div class="columns is-centered">
+          <div class="content is-8">
+              This website templated is borrowed from <a
+                  href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+          </div>
       </div>
-    </div>
   </div>
 </footer>
-
+<!-- END ---   SECTION - FOOTER -->
 </body>
 </html>
