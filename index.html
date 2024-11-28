@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="LineTR: Unified Text Line Segmentation for Challenging Palm Leaf Manuscripts">
+  <meta name="description" content="LineTR: Unified Text Line Segmentation for Challenging Palm Leaf Manuscripts">
   <meta name="keywords" content="Zero Shot,Line Segmentation,Palm Manuscripts">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>"LineTR:Unified Text Line Segmentation for Challenging Palm Leaf Manuscripts"</title>
+  <title>"LineTR: Unified Text Line Segmentation for Challenging Palm Leaf Manuscripts"</title>
 
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/1630643899289.jpeg">
 
@@ -27,104 +25,105 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="http://ihdia.iiit.ac.in">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="http://ihdia.iiit.ac.in">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
         </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://github.com/ihdia">
-            HDIA Group
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
           </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://github.com/ihdia">
+              HDIA Group
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- START ---   SECTION - TITLE -->
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">LineTR</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://www.linkedin.com/in/vaibhav-agrawal-5730b320b/">Vaibhav Agrawal</a><sup></sup>,</span>
-            <span class="author-block">
-              <a href="https://www.linkedin.com/in/niharika-vadlamudi/">Niharika Vadlamudi</a><sup></sup>,</span>
-            <span class="author-block">
-              <a href="https://www.linkedin.com/in/hwaseem04/">Muhammad Waseem</a><sup></sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.linkedin.com/in/amaljoseph/">Amal Joseph</a><sup></sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.linkedin.com/in/sreenya-chitluri-224286200">Sreenya Chitluri</a><sup></sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://ravika.github.io">Ravi Kiran Sarvadevabhatla</a><sup></sup>
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup></sup>International Institute of Information Technology,Hyderabad</span>
-          </div>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup></sup>Center for Visual Information Technology (CVIT) </span>
-          </div>
-
+  <!-- START ---   SECTION - TITLE -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://drive.google.com/file/d/1Z2nMoeyhxy_HgHTrmcT_UD2LBV-Y0FhJ/view?usp=drive_link"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
+            <h1 class="title is-1 publication-title">LineTR</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/vaibhav-agrawal-5730b320b/">Vaibhav Agrawal</a><sup></sup>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/niharika-vadlamudi/">Niharika Vadlamudi</a><sup></sup>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/hwaseem04/">Muhammad Waseem</a><sup></sup>,
               </span>
-              <span class="link-block">
-                <a href="https://drive.google.com/file/d/1IeoChVp4OgWlcbKVgEOB6qoNCDr1DyRI/view?usp=drive_link"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Supplementary</span>
-                </a>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/amaljoseph/">Amal Joseph</a><sup></sup>,
               </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://drive.google.com/file/d/1aztOQW7b24D1OqzJ3Yv-j9XPG0iBbnap/view"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/sreenya-chitluri-224286200">Sreenya Chitluri</a><sup></sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://ravika.github.io">Ravi Kiran Sarvadevabhatla</a><sup></sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup></sup>International Institute of Information Technology,Hyderabad</span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup></sup>Center for Visual Information Technology (CVIT) </span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://drive.google.com/file/d/1Z2nMoeyhxy_HgHTrmcT_UD2LBV-Y0FhJ/view?usp=drive_link"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://drive.google.com/file/d/1IeoChVp4OgWlcbKVgEOB6qoNCDr1DyRI/view?usp=drive_link"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://drive.google.com/file/d/11w3KitRdSvjmte1au_WTQ1YoJwmVQ9Z3/view?usp=sharing"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <!-- <span class="link-block">
                 <a href="https://github.com/ihdia/LineTR"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -132,138 +131,230 @@
                   </span>
                   <span>Code</span>
                   </a>
-              </span>
+              </span> -->
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- END ---   SECTION - TITLE -->
+  </section>
+  <!-- END ---   SECTION - TITLE -->
 
 
 
 
-<!-- <section class="hero teaser">
-  ######################## VIDEO BLOCK
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/sf_video.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">LineTR</span> works on palm leaf manuscripts in 
-        an dataset agnostic manner.
-      </h2>
+
+  <!-- START ---   SECTION - VIDEO TEASER -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video id="teaser" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/1711_final_2mins.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          <span class="dnerf">LineTR</span> works on palm leaf manuscripts in a dataset agnostic manner.
+        </h2>
+      </div>
     </div>
-  </div>
-</section> -->
+  </section>
+  <!-- END ---   SECTION - VIDEO TEASER -->
 
-<!-- START ---   SECTION - VIDEO TEASER -->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <figure>
-        <img src="./static/images/V2 - ICPR-LineTR.png" alt="Title Card." style="width: 100%;" height="100%"/>
-    </figure>
+
+  <!-- START ---   SECTION - ABSTRACT -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Historical manuscripts pose significant challenges for line segmentation due to their diverse sizes,
+              scripts, and appearances.
+              Traditional methods often rely on dataset-specific processing or training per-dataset models, limiting
+              scalability and maintainability. <br>
+              To this end, we propose <b>LineTR</b>, <i>a single model for all dataset collections</i>.
+              LineTR is a two-staged approach. The first stage predicts text-strike-through lines called
+              <i>scribbles</i> and a novel <i>text-energy map</i> of the input document image. The second stage is a
+              seam-generation network which uses these to get precise polygons around the text-lines. <br>
+              Text-line segmentation has been mainly approached as a dense-prediction task, which is ineffective, as the
+              inductive prior of a line is not utilized, and this leads to poor segmentation performance. Thus, our key
+              insight is to parametrize a text-line, thus preserving these inductive priors. To avoid resizing the
+              document, the input image is first broken down into <i>context-adapted patches</i>, and each patch is
+              processed by the stage-1 network independently. The patch-level outputs are combined using a
+              dataset-agnostic post processing pipeline. Notably, we show that carefully choosing the patch size to
+              capture enough <i>context</i> is crucial for generalization, as document images come in arbitrary
+              resolutions.
+              LineTR has been evaluated extensively through experiments and qualitative comparisons. Additionally, our
+              method exhibits <b>strong zero-shot generalization</b> to unseen document collections.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <!-- Paper video. -->
+      <!-- <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/watch?v=38S56ottFQ4&list=PLGfNvK0w_pZM4o0iwZ3DM1WdjaAtLlifg"
+              frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div> -->
+      <!--/ Paper video. -->
     </div>
-  </div>
-</section>
-<!-- END ---   SECTION - VIDEO TEASER -->
+  </section>
+  <!-- END ---   SECTION - ABSTRACT -->
 
 
-<!-- START ---   SECTION - ABSTRACT -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We propose LineTR, a novel two-stage line segmentation approach which can process a diverse variety of challenging handwritten documents in a unified,
-            dataset-agnostic manner.
-          </p>
-          <p>
-            Historical manuscripts pose significant challenges for line segmentation due to their diverse sizes, scripts, and appearances.
-            Traditional methods often rely on dataset-specific processing or training per-dataset models, limiting scalability and maintainability.
-            In the first stage, LineTR processes context-adaptive image patches using a DETR-style network to generate parametric representations of text lines and a hybrid CNN-transformer network to create a text energy map. 
-            A robust post-processing procedure converts these into document-level scribbles. 
-            In the second stage, these scribbles and the text energy map are used to generate precise polygons enclosing the text lines.
-            Experimental results demonstrate that LineTR achieves superior line segmentation with a single model and performs well in zero-shot inference on the new datasets.
-          </p>
+  <!-- START ---   SECTION - METHOD -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Network Architecture . -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Why do previous methods fail?</h2>
+          <div class="content has-text-justified">
+            <p>
+              Previous work treats text-line segmentation as a dense-prediction task. This leads to merging of adjacent
+              text-lines, leading to poor segmentation performance.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centred">
+        <div class="columns is-full">
+          <figure>
+            <img src="./static/images/seamformer_fail.jpg" alt="method" style="width: 100%;" />
+          </figure>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
+  </section>
+  <!-- END ---   SECTION - ARCHITECTURE -->
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/watch?v=38S56ottFQ4&list=PLGfNvK0w_pZM4o0iwZ3DM1WdjaAtLlifg"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+  <!-- START ---   SECTION - METHOD -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Network Architecture . -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Proposed Approach: LineTR</h2>
+          <div class="content has-text-justified">
+            <p>
+              Our method first breaks the input image into <i>context-adapted patches</i> (1). These image patches are
+              processed independently by a branched network (stage-1) to output line-parameters and a text-energy map.
+              Specifically, an image patch is passed through a ViT encoder to obtain image features. A DETR-style
+              network, called the <b>Line-Parameter Generator</b> (2a) decodes a set of randomly initialized
+              <i>line-queries</i> conditioned on the image features, and finally predicts the line parameters and
+              probability scores. The second branch, the <b>Text-Energy Map Generator</b> is a hybrid CNN-transformer
+              network which predicts the text-energy map as shown. The patch-level outputs from both the branches are
+              independently post-processed to obtain global outputs (3). <br>
+              Stage-2 is a seam generation network, which uses the outputs of stage-1 to output precise polygons
+              enclosing the text lines (4).
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centred">
+        <div class="columns is-full">
+          <figure>
+            <img src="./static/images/method.png" alt="method" style="width: 100%;" />
+            <figcaption style="font-style: italic;">
+              <center>LineTR</center>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </div>
-    <!--/ Paper video. -->
-  </div>
-</section>
-<!-- END ---   SECTION - ABSTRACT -->
+  </section>
+  <!-- END ---   SECTION - ARCHITECTURE -->
 
 
-<!-- START ---   SECTION - INTRODUCTION -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Network Architecture . -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Introduction</h2>
-        <div class="content has-text-justified">
-          <p>
-            Historical manuscripts pose significant challenges for line segmentation due to their diverse sizes, scripts, and appearances.
-            Traditional methods often rely on dataset-specific processing or training per-dataset models, limiting scalability and maintainability.
-            In the first stage, LineTR processes context-adaptive image patches using a DETR-style network to generate parametric representations of text lines and a hybrid CNN-transformer network to create a text energy map. 
-            A robust post-processing procedure converts these into document-level scribbles. 
-            In the second stage, these scribbles and the text energy map are used to generate precise polygons enclosing the text lines.
-            Experimental results demonstrate that LineTR achieves superior line segmentation with a single model and performs well in zero-shot inference on the new datasets.
-          </p>
+  <!-- START ---   SECTION - METHOD -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Network Architecture . -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Re-Imagining Text-Lines!</h2>
+          <div class="content has-text-justified">
+            <p>
+              We use the point-slope form to parametrize a text-line, as shown.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centred">
+        <div class="columns is-full">
+          <center>
+            <figure>
+              <img src="./static/images/re_imagine.png" alt="method" style="width: 75%;" />
+            </figure>
+          </center>
         </div>
       </div>
     </div>
-</section>
-<!-- END ---   SECTION - INTRODUCTION -->
+  </section>
+  <!-- END ---   SECTION - ARCHITECTURE -->
 
 
-<!-- START ---   SECTION - ARCHITECTURE -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Network Architecture . -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Network Architecture</h2>
-        <div class="content has-text-justified">
-          <p>
-            Historical manuscripts pose significant challenges for line segmentation due to their diverse sizes, scripts, and appearances.
-            Traditional methods often rely on dataset-specific processing or training per-dataset models, limiting scalability and maintainability.
-            In the first stage, LineTR processes context-adaptive image patches using a DETR-style network to generate parametric representations of text lines and a hybrid CNN-transformer network to create a text energy map. 
-            A robust post-processing procedure converts these into document-level scribbles. 
-            In the second stage, these scribbles and the text energy map are used to generate precise polygons enclosing the text lines.
-            Experimental results demonstrate that LineTR achieves superior line segmentation with a single model and performs well in zero-shot inference on the new datasets.
-          </p>
+  <!-- START ---   SECTION - METHOD -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Network Architecture . -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3"><i>Choose Your Patches Wisely!</i></h2>
+          <div class="content has-text-justified">
+            <p>
+              Patching avoids resizing the document to a small size. However, choosing fixed size patches is ineffective and hinders out of domain generalization. This is explained by the fact that document images come in arbitrary resolutions, and therefore a fixed patch may not capture <i>good context</i>. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centred">
+        <div class="columns is-full">
+          <center>
+            <figure>
+              <img src="./static/images/good_bad_context.png" alt="method" style="width: 50%;" />
+            </figure>
+          </center>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>
+              To this end, we propose an algorithm for <i>context-aware patching</i>. (1) We sample <i>raw</i> patches of varying sizes. (2) For these raw patches, we perform inference through the <b>Line-Parameter Generator</b> to get <i>noisy predictions</i>. (3) These noisy predictions are used to estimate an average value of the interline gap in the document. (4) This interline gap is then used to get the context adapted patch size. Patches of this size are finally sampled from the document, and fed to LineTR for inference.  
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centred">
+        <div class="columns is-full">
+          <center>
+            <figure>
+              <img src="./static/images/context_patching.png" alt="method" style="width: 100%;" />
+              <figcaption style="font-style: italic;">
+                <center>Context-Adaptive Patching</center>
+              </figcaption>
+            </figure>
+          </center>
         </div>
       </div>
     </div>
-</section>
-<!-- END ---   SECTION - ARCHITECTURE -->
+  </section>
+  <!-- END ---   SECTION - ARCHITECTURE -->
 
 
-<!-- START ---   SECTION - QUALITATIVE RESULTS -->
-<section class="section" id="abstract">
-  <div class="container is-max-desktop">
+  <!-- START ---   SECTION - QUALITATIVE RESULTS -->
+  <section class="section" id="abstract">
+    <div class="container is-max-desktop">
 
       <div class="columns is-centered">
         <div class="column is-full has-text-centered">
@@ -273,8 +364,8 @@
       <!-- ROW 1 - curved text lines -->
       <div class="columns is-centered">
         <div class="column is-full">
-          <h2 class="title is-5">Curved Text-lines</h2>
-          <p>SeamFormer and Palmira - fail when the text-lines have a curvature spread across the document width. But <b>LineTR</b> is able to detect all the text-lines accurately.
+          <p>SeamFormer and Palmira - fail when the text-lines have a curvature spread across the document width. But
+            <b>LineTR</b> is able to detect all the text-lines accurately.
           </p>
         </div>
       </div>
@@ -282,36 +373,39 @@
       <div class="columns is-centered has-text-centered">
         <div class="column">
           <figure>
-            <img src="./static/images/results/sf_curved.jpg" alt="Predictions from SeamFormer for a manuscript with curved text." style="width: 90%;"/>
-            <figcaption  style="font-style: italic;">
-                SeamFormer.
+            <img src="./static/images/results/sf_curved.jpg"
+              alt="Predictions from SeamFormer for a manuscript with curved text." style="width: 90%;" />
+            <figcaption style="font-style: italic;">
+              SeamFormer.
             </figcaption>
           </figure>
         </div>
         <div class="column">
           <figure>
-              <img src="./static/images/results/palmira_curved.jpg" alt="Predictions from Palmira for a manuscript with curved text." style="width: 90%;"/>
-              <figcaption  style="font-style: italic;">
-                  Palmira.
-              </figcaption>
+            <img src="./static/images/results/palmira_curved.jpg"
+              alt="Predictions from Palmira for a manuscript with curved text." style="width: 90%;" />
+            <figcaption style="font-style: italic;">
+              Palmira.
+            </figcaption>
           </figure>
         </div>
         <div class="column">
           <figure>
-              <img src="./static/images/results/linetr_curved.jpg" alt="Predictions from LineTR (ours) for a manuscript with curved text." style="width: 90%;"/>
-              <figcaption  style="font-style: italic;  font-weight: bold;">
-                  LineTR (Ours).
-              </figcaption>
+            <img src="./static/images/results/linetr_curved.jpg"
+              alt="Predictions from LineTR (ours) for a manuscript with curved text." style="width: 90%;" />
+            <figcaption style="font-style: italic;  font-weight: bold;">
+              LineTR (Ours).
+            </figcaption>
           </figure>
+        </div>
       </div>
-      </div>
-      
-      
+
+
       <!-- ROW 2 - Dense text lines -->
       <div class="columns is-centered">
         <div class="column is-full">
-          <h2 class="title is-5">Dense Text-lines</h2>
-          <p>SeamFormer and Palmira - fails on images where the density of text is very high. But <b>LineTR</b> succeeds in detecting all the text-lines accurately.
+          <p>SeamFormer and Palmira - fails on images where the density of text is very high. But <b>LineTR</b> succeeds
+            in detecting all the text-lines accurately.
           </p>
         </div>
       </div>
@@ -319,34 +413,37 @@
       <div class="columns is-centered has-text-centered">
         <div class="column">
           <figure>
-            <img src="./static/images/results/sf_dense.jpg" alt="Predictions from SeamFormer for a manuscript with dense text." style="width: 75%;"/>
-            <figcaption  style="font-style: italic;">
-                SeamFormer.
+            <img src="./static/images/results/sf_dense.jpg"
+              alt="Predictions from SeamFormer for a manuscript with dense text." style="width: 75%;" />
+            <figcaption style="font-style: italic;">
+              SeamFormer.
             </figcaption>
           </figure>
         </div>
         <div class="column">
           <figure>
-              <img src="./static/images/results/palmira_dense.jpg" alt="Predictions from Palmira for a manuscript with dense text." style="width: 75%;"/>
-              <figcaption  style="font-style: italic;">
-                  Palmira.
-              </figcaption>
+            <img src="./static/images/results/palmira_dense.jpg"
+              alt="Predictions from Palmira for a manuscript with dense text." style="width: 75%;" />
+            <figcaption style="font-style: italic;">
+              Palmira.
+            </figcaption>
           </figure>
         </div>
         <div class="column">
           <figure>
-              <img src="./static/images/results/linetr_dense.jpg" alt="Predictions from LineTR (ours) for a manuscript with dense text." style="width: 75%;"/>
-              <figcaption  style="font-style: italic;  font-weight: bold;">
-                  LineTR (Ours).
-              </figcaption>
+            <img src="./static/images/results/linetr_dense.jpg"
+              alt="Predictions from LineTR (ours) for a manuscript with dense text." style="width: 75%;" />
+            <figcaption style="font-style: italic;  font-weight: bold;">
+              LineTR (Ours).
+            </figcaption>
           </figure>
-      </div>
+        </div>
       </div>
 
       <!-- ROW 3 - Zeroshot Results -->
       <div class="columns is-centered">
         <div class="column is-full">
-          <h2 class="title is-5">Zero-shot Predictions</h2>
+          <h2 class="title is-5">Zero-shot Results</h2>
           <p>Zero-shot outputs of LineTR on the newly introduced datasets.
           </p>
         </div>
@@ -355,7 +452,7 @@
       <div class="columns is-centered has-text-centered">
         <div class="column">
           <figure>
-            <img src="./static/images/zeroshot/SM2.jpg" alt="Zero-shot result from SM." style="width: 100%;"/>
+            <img src="./static/images/zeroshot/SM2.jpg" alt="Zero-shot result from SM." style="width: 100%;" />
           </figure>
         </div>
       </div>
@@ -363,7 +460,7 @@
       <div class="columns is-centered has-text-centered">
         <div class="column">
           <figure>
-              <img src="./static/images/zeroshot/UB.JPG" alt="Zero-shot result from UB." style="width: 90%;"/>
+            <img src="./static/images/zeroshot/UB.JPG" alt="Zero-shot result from UB." style="width: 90%;" />
           </figure>
         </div>
       </div>
@@ -371,35 +468,36 @@
       <div class="columns is-centered has-text-centered">
         <div class="column">
           <figure>
-              <img src="./static/images/zeroshot/WM.jpg" alt="Zero-shot result from WM." style="width: 90%;"/>
+            <img src="./static/images/zeroshot/WM.jpg" alt="Zero-shot result from WM." style="width: 90%;" />
           </figure>
-      </div>
+        </div>
       </div>
 
 
       <!-- ROW 4 - OOD Results -->
       <div class="columns is-centered">
         <div class="column is-full">
-          <h2 class="title is-5">LineTR performs well on other Handwritten Datasets</h2>
-          <p>Even though LineTR was trained only on palm leaf manuscripts, it is able to generalize to documents well outside it’s primary domain.</p>
+          <h2 class="title is-5">LineTR generalizes well!</h2>
+          <p>Even though LineTR was trained only on palm leaf manuscripts, it is able to generalize to documents well
+            outside its domain.</p>
         </div>
       </div>
 
       <div class="columns is-centered has-text-centered">
         <div class="column">
           <figure>
-            <img src="./static/images/ood/2_icdar2017_1.jpg" alt="ICDAR2017 dataset prediction 1" style="width: 60%;"/>
-            <figcaption  style="font-style: italic;">
-                ICDAR2017 HTR dataset
+            <img src="./static/images/ood/2_icdar2017_1.jpg" alt="ICDAR2017 dataset prediction 1" style="width: 60%;" />
+            <figcaption style="font-style: italic;">
+              ICDAR2017 HTR dataset
             </figcaption>
           </figure>
         </div>
         <div class="column">
           <figure>
-              <img src="./static/images/ood/icdar2017_2.jpeg" alt="ICDAR2017 dataset prediction 2" style="width: 60%;"/>
-              <figcaption  style="font-style: italic;">
-                ICDAR2017 HTR dataset
-              </figcaption>
+            <img src="./static/images/ood/icdar2017_2.jpeg" alt="ICDAR2017 dataset prediction 2" style="width: 60%;" />
+            <figcaption style="font-style: italic;">
+              ICDAR2017 HTR dataset
+            </figcaption>
           </figure>
         </div>
       </div>
@@ -416,56 +514,58 @@
       <div class="columns is-centered has-text-centered">
         <div class="column">
           <figure>
-            <img src="./static/images/results/results_table.png" alt="Comparative evaluation of LineTR against baseline models using benchmark datasets." style="width: 70%;"/>
+            <img src="./static/images/results/results_table.png"
+              alt="Comparative evaluation of LineTR against baseline models using benchmark datasets."
+              style="width: 70%;" />
           </figure>
         </div>
       </div>
 
 
-  </div>
-</section>
+    </div>
+  </section>
 
-<!-- END ---   SECTION - QUALITATIVE RESULTS -->
+  <!-- END ---   SECTION - QUALITATIVE RESULTS -->
 
 
 
-<!-- START ---   SECTION - BIBTEXT -->
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{vaibav2024linetr,
+  <!-- START ---   SECTION - BIBTEXT -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{vaibav2024linetr,
   author    = {Agrawal, Vaibhav and Vadlamudi, Niharika and Waseem, Muhammad and Joseph, Amal and Chitluri, Sreenya and Sarvadevabhatla, Ravi Kiran},
   title     = {LineTR:Unified Text Line Segmentation for Challenging Palm Leaf Manuscripts},
   journal   = {ICPR},
   year      = {2024},
 }</code></pre>
-  </div>
-</section>
+    </div>
+  </section>
 
-<section class="section" id="Contact">
-  <div class="container is-max-desktop content">
-    <h2 class="title">Contact</h2>
-    <div class="content has-text-justified">
-      <p>
-        If you have any question, please contact Dr. Ravi Kiran Sarvadevabhatla at ravi.kiran@iiit.ac.in.
-      </p>
-  </div>
-</section>
-<!-- END ---   SECTION - BIBTEXT -->
-
-
-
-<!-- START ---   SECTION - FOOTER -->
-<footer class="footer">
-  <div align="center" class="container">
-      <div class="columns is-centered">
-          <div class="content is-8">
-              This website templated is borrowed from <a
-                  href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
-          </div>
+  <section class="section" id="Contact">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Contact</h2>
+      <div class="content has-text-justified">
+        <p>
+          If you have any question, please contact Dr. Ravi Kiran Sarvadevabhatla at ravi.kiran@iiit.ac.in.
+        </p>
       </div>
-  </div>
-</footer>
-<!-- END ---   SECTION - FOOTER -->
+  </section>
+  <!-- END ---   SECTION - BIBTEXT -->
+
+
+
+  <!-- START ---   SECTION - FOOTER -->
+  <footer class="footer">
+    <div align="center" class="container">
+      <div class="columns is-centered">
+        <div class="content is-8">
+          This website templated is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END ---   SECTION - FOOTER -->
 </body>
+
 </html>
